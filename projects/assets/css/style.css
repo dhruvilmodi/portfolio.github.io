@@ -1,0 +1,2943 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none !important;
+    /* font-family: 'Quicksand', sans-serif !important; */
+    font-family: 'Special Elite', cursive !important;
+}
+
+.progress-container {
+    width: 100%;
+    height: 8px;
+    background: none;
+    position: fixed;
+    top: 0;
+    z-index: 800;
+    /* transition: ease-in-out; */
+}
+  
+.progress-bar {
+    height: 8px;
+    background: #e21313;
+    width: 0%;
+    border-radius: 0px 50px 50px 0px;
+}
+
+.sidenav{
+    z-index: 800;
+    transition: 1s;
+}
+
+#mySidenav a {
+    position: fixed;
+    right: -100px;
+    transition: 0.3s;
+    padding: 5px;
+    padding-left: 20px;
+    width: 120px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    border-radius: 5px 0px 0px 25px;
+    z-index: 800;
+}
+  
+#mySidenav a:hover {
+    right: 0 !important;
+    cursor: pointer;
+}
+
+.projectNav{
+    opacity: 0;
+}
+
+.heroPageNav {
+    top: 20vh;
+    background-color: #4CAF5095;
+}
+  
+.firstNav {
+    top: 27vh;
+    background-color: #4CAF5095;
+}
+  
+.secondNav {
+    top: 34vh;
+    background-color: #4CAF5095;
+}
+  
+.thirdNav {
+    top: 41vh;
+    background-color: #aab33695;
+}
+  
+.forthNav {
+    top: 48vh;
+    background-color: #aab33695;
+}
+  
+.fifthNav {
+    top: 55vh;
+    background-color: #aab33695;
+}
+  
+.sixthNav {
+    top: 62vh;
+    background-color: #b3363695;
+}
+  
+.contactNav {
+    top: 69vh;
+    background-color: #b3363695;
+}
+
+object{
+    font-family: 'Raleway', sans-serif !important;
+}
+
+body{
+    background: #131922;
+    background-color: #131922;
+    color: #FFFFFF;
+    overflow-x: hidden !important;
+    overflow-y: hidden !important;
+    position: relative;
+    height: 100%;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none;
+}
+
+body::-webkit-scrollbar {
+    display: none !important;
+}
+
+.textShadow{
+    color: #707070;
+    text-shadow: 0px 1px #70707050;
+}
+
+.para{
+    color: #FFFFFF;
+    text-shadow: 0px 1px #00000050;
+}
+
+.letterSpacing{
+    letter-spacing: 1pt;
+}
+
+.padding-bottom{
+    padding-bottom: 20px;
+}
+
+.align-middle{
+    position: relative;
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+    margin: auto;
+    height: 70vh;
+    padding-bottom: 40px;
+}
+
+.bottomBtnContainer{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 5vh;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.bottomButton{
+    display: inline !important;
+    color: #DDDDDD;
+    border: 1px solid #DDDDDD;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+    /* opacity: 0; */
+    margin: auto 5px auto 5px;
+}
+
+.bottomButton:hover{
+    background-color: #DDDDDD;
+    color: #222222;
+    opacity: 1 !important;
+}
+
+.grid-container{
+    width: 65vw;
+}
+
+.middle{
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.iconsContainer{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: left !important;
+    /* padding: 10px; */
+}
+
+.projectIcons{
+    min-height: 20px;
+    max-height: 30px;
+    margin-right: 14px;
+}
+
+/* --------------- welcomeContainer --------------- */
+
+.welcomeContainer{
+    width: 100vw;
+    height: 100vh;
+    background-color: #131922;
+    position: fixed;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.welcomeText1, .welcomeText2{
+    transition: 0.5s;
+    opacity: 0;
+    mix-blend-mode: screen;
+}
+
+/* --------------- keyboardHint --------------- */
+.keyboardHint{
+    width: 100vw;
+    height: 100vh;
+    background-color: #ffffff;
+    color: #000000;
+    position: fixed;
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: none;
+    opacity: 0;
+}
+
+.keyboard{
+    min-height: 200px;
+    max-height: 300px;
+    transition: 0.5s;
+}
+
+/* --------------- factsContainer --------------- */
+
+.facts{
+    width: 100vw;
+    height: 100vh;
+    background: #000000;
+    position: fixed;
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: none;
+    opacity: 0;
+}
+
+.factsImgs{
+    min-width: 300px;
+    max-width: 500px;
+    height: 350px;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+.factContainer{
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    padding-top: 35px;
+    border-radius: 5px;
+}
+
+.factContainer p{
+    text-align: justify;
+    margin-top: 20px;
+}
+
+.factContainer a{
+    width: 70vw;
+    text-align: left;
+}
+
+.escBlink{
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* --------------- reachedTopContainer --------------- */
+.reachedTopContainer{
+    width: 100vw;
+    height: 10vh;
+    background-color: #13192299;
+    position: fixed;
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    opacity: 0;
+}
+
+.surfaceContainerText{
+    transition: 0.5s;
+}
+
+/* --------------- submarine --------------- */
+
+.subMarine{
+    height: 60px;
+    position: fixed;
+    z-index: 300;
+    bottom: 10vh;
+    left: 3vw;
+    opacity: 0;
+}
+
+/* --------------- heropage --------------- */
+
+.heroPage{
+    height: 100vh;
+    width: 100vw;
+    background: #131922;
+    color: #FFFFFF;
+    background-image: url(../images/projects_heroPage.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    position: relative;
+}
+
+.airSpace{
+    position: absolute;
+    width: 100vw;
+    top: 5vh;
+    z-index: 0;
+}
+
+.plane, .plane2, .plane3, .plane4{
+    height: 35px;
+    z-index: 0 !important;
+}
+
+.blast1, .blast2, .blast3, .blast4{
+    z-index: 0 !important;
+    position: absolute;
+}
+
+.blast1{
+    height: 50px;
+    left: 10vw;
+    top: 22vh;
+}
+
+.blast2{
+    height: 60px;
+    right: 10vw;
+    top: 12vh;
+}
+
+.blast3{
+    height: 40px;
+    left: 45vw;
+    top: 32vh;
+}
+
+.blast4{
+    height: 50px;
+    right: 35vw;
+    top: 25vh;
+}
+
+.cloud1{
+    height: 150px;
+    z-index: 100 !important;
+}
+
+.cloud2{
+    height: 150px;
+    z-index: 200 !important;
+}
+.cloud1{
+    height: 150px;
+    z-index: 100 !important;
+}
+
+.ship1{
+    position: absolute;
+    height: 100px;
+    bottom: 26vh;
+    right: 3vw;
+    margin: 0 auto;
+}
+
+.ship2{
+    position: absolute;
+    height: 100px;
+    bottom: 26vh;
+    left: 3vw;
+    margin: 0 auto;
+}
+
+.heroContent{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+#animation_container{
+    height: 100vh !important;
+}
+
+.diveButton{
+    width: 150px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 5vh;
+    margin: 0 auto;
+    text-align: center;
+    border: 1px solid #DDDDDD;
+    padding: 10px;
+    color: #DDDDDD;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.diveButton:hover{
+    color: #222222;
+    background-color: #DDDDDD;
+    opacity: 1 !important;
+}
+
+/* --------------- firstPage --------------- */
+
+.firstPage{
+    height: 100vh;
+    width: 100vw;
+    background: #131922;
+    color: #FFFFFF;
+    background-image: url(../images/projects_firstPage.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    padding-top: 40px;
+}
+
+.pageHead{
+    position: relative;
+    display: block !important;
+    text-align: center;
+}
+
+.firstStagger{
+    /* display: none; */
+    opacity: 0;
+}
+
+.firstStagger::after{
+    display: flex;
+    opacity: 1;
+}
+
+.projectImages{
+    position: relative;
+    display: block !important;
+    text-align: center !important;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    min-height: 150px;
+    max-height: 200px;
+    object-fit: fill;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.projectImages:hover{
+    box-shadow: 0px 0px 20px #1e90ff;
+    transform: scale(1.05) !important;
+}
+
+.otherProjectImages{
+    position: relative;
+    display: block !important;
+    text-align: center !important;
+    left: 0;
+    right: 0;
+    margin: auto;
+    min-width: 150px;
+    max-width: 250px;
+    min-height: 150px;
+    max-height: 175px;
+    border-radius: 3px;
+    transition: 0.5s;
+
+}
+
+.otherProjectImages:hover{
+    box-shadow: 0px 0px 20px #1e90ff;
+    transform: scale(1.05) !important;
+}
+
+.fish1About{
+    height: 50px;
+    position: relative;
+    top: 40vh;
+}
+
+.fish2About{
+    height: 30px;
+    position: relative;
+    top: 50vh;
+}
+
+.fish3About{
+    height: 40px;
+    position: relative;
+    top: 30vh;
+}
+
+.fish4About{
+    height: 50px;
+    position: relative;
+    top: 20vh;
+}
+
+.fish5About{
+    height: 45px;
+    position: relative;
+    top: 35vh;
+}
+
+.aboutHead{
+    opacity: 0;
+    text-align: center;
+    margin: 0px auto 20px auto;
+    z-index: 150;
+}
+
+.aboutContent{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    z-index: 150;
+}
+
+.aboutContainer{
+    /* width: 70vw; */
+    height: 50vh;
+    position: relative;
+    top: 10vh;
+}
+
+.dhruvilImage{
+    max-height: 300px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    opacity: 0;
+    z-index: 150;
+}
+
+.aboutSub{
+    text-align: justify;
+    /* margin-top: 10px; */
+    opacity: 0;
+    z-index: 150;
+}
+
+/* --------------- secondPage --------------- */
+
+.secondPage{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    background: #000000;
+    color: #FFFFFF;
+    background-image: url(../images/projects_secondPage.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    padding-top: 40px;
+}
+
+.skillsHead{
+    text-align: center;
+    padding-top: 5vh;
+    padding-bottom: 20px;
+}
+
+/* .iconsContainer{
+    width: 80vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px auto 60px auto;
+} */
+
+.secondStagger{
+    opacity: 0;
+}
+
+.skillIcons{
+    min-height: 30px;
+    max-height: 45px;
+}
+
+.jellyFish1{
+    height: 70px;
+    display: inline-block;
+    position: absolute;
+    bottom: 50vh;
+    right: 4vw;
+    opacity: 0.7;
+}
+
+.jellyFish2{
+    height: 50px;
+    display: inline-block;
+    position: absolute;
+    bottom: 10vh;
+    left: 8vw;
+    opacity: 0.3;
+}
+
+.jellyFish3{
+    height: 40px;
+    display: inline-block;
+    position: absolute;
+    bottom: 75vh;
+    left: 5vw;
+    opacity: 0.2;
+}
+
+/* --------------- thirdPage --------------- */
+
+.thirdPage{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    background: #000000;
+    color: #FFFFFF;
+    background-image: url(../images/projects_thirdPage.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    padding-top: 40px;
+}
+
+.thirdStagger{
+    opacity: 0;
+}
+
+/* --------------- forthPage --------------- */
+
+.forthPage{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    background: #000000;
+    color: #FFFFFF;
+    background-image: url(../images/projects_thirdPage.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    padding-top: 40px;
+}
+
+.forthStagger{
+    opacity: 0;
+}
+
+/* --------------- fifthPage --------------- */
+
+.fifthPage{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    background: #000000;
+    color: #FFFFFF;
+    background-image: url(../images/projects_thirdPage.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    padding-top: 40px;
+}
+
+.fifthStagger{
+    opacity: 0;
+}
+
+/* --------------- sixthPage --------------- */
+
+.sixthPage{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    background: #000000;
+    color: #FFFFFF;
+    background-image: url(../images/otherProjectsPage.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    padding-top: 40px;
+}
+
+.sixthStagger{
+    opacity: 0;
+}
+
+.captions{
+    margin-top: 10px;
+}
+
+/* --------------- projectPage --------------- */
+
+.projectPage{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    background: #000000;
+    color: #FFFFFF;
+    background-image: url(../images/projectPage.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+.projectHead{
+    text-align: center;
+    padding-top: 5vh;
+    padding-bottom: 20px;   
+}
+
+.shark1{
+    height: 80px;
+    display: inline-block;
+    position: absolute;
+    bottom: 36vh;
+    right: -15vw;
+    opacity: 0.6;
+    z-index: 0;
+
+}
+
+.shark2{
+    height: 40px;
+    display: inline-block;
+    position: absolute;
+    bottom: 47vh;
+    right: -10vw;
+    opacity: 0.6;
+    z-index: 0;
+}
+
+.nukeBlueprint{
+    height: 200px;
+    z-index: 200;
+    margin: 20px auto 20px auto;
+    cursor: pointer;
+}
+
+.project{
+    opacity: 0;
+}
+
+/* --------------- contactPage --------------- */
+
+.contactPage{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    background: #131922;
+    color: #FFFFFF;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+.contact{
+    opacity: 0;
+}
+
+.contactHead{
+    text-align: center;
+    position: relative;
+    top: 10vh;
+}
+
+.contactContainer{
+    position: relative;
+    top: 20vh;
+}
+
+.contactIcons{
+    min-height: 20px;
+    max-height: 35px;
+    cursor: pointer;
+}
+
+.footerContainer{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 40vh;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contactBtn{
+    color: #DDDDDD;
+    border: 1px solid #DDDDDD;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+    opacity: 0;
+    margin: auto 5px auto 5px;
+}
+
+.contactBtn:hover{
+    background-color: #DDDDDD;
+    color: #222222;
+    opacity: 1 !important;
+}
+
+.copyright{
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    bottom: 5vh;
+    text-align: center;
+}
+
+.loadToPresent{
+    width: 100vw;
+    height: 100vh;
+    z-index: 1000;
+    background: #131922;
+    position: fixed;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media screen and (max-device-width: 1280px) {
+    
+    /* --------------- submarine --------------- */
+
+    .subMarine{
+        height: 60px;
+        position: fixed;
+        z-index: 300;
+        bottom: 10vh;
+        left: 3vw;
+        opacity: 0;
+    }
+
+    /* --------------- heropage --------------- */
+
+    .heroPage{
+        height: 100vh;
+        width: 100vw;
+        background: #131922;
+        color: #FFFFFF;
+        background-image: url(../images/projects_heroPage.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+        position: relative;
+    }
+
+    .airSpace{
+        position: absolute;
+        width: 100vw;
+        top: 5vh;
+        z-index: 0;
+    }
+
+    .plane, .plane2, .plane3, .plane4{
+        height: 35px;
+        z-index: 0 !important;
+    }
+
+    .blast1, .blast2, .blast3, .blast4{
+        z-index: 0 !important;
+        position: absolute;
+    }
+
+    .blast1{
+        height: 50px;
+        left: 10vw;
+        top: 22vh;
+    }
+
+    .blast2{
+        height: 60px;
+        right: 10vw;
+        top: 12vh;
+    }
+
+    .blast3{
+        height: 40px;
+        left: 45vw;
+        top: 32vh;
+    }
+
+    .blast4{
+        height: 50px;
+        right: 35vw;
+        top: 25vh;
+    }
+
+    .cloud1{
+        height: 150px;
+        z-index: 100 !important;
+    }
+
+    .cloud2{
+        height: 150px;
+        z-index: 200 !important;
+    }
+    .cloud1{
+        height: 150px;
+        z-index: 100 !important;
+    }
+
+    .ship1{
+        position: absolute;
+        height: 100px;
+        bottom: 26vh;
+        right: 3vw;
+        margin: 0 auto;
+    }
+
+    .ship2{
+        position: absolute;
+        height: 100px;
+        bottom: 26vh;
+        left: 3vw;
+        margin: 0 auto;
+    }
+
+    .heroContent{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 100;
+    }
+
+    #animation_container{
+        height: 100vh !important;
+    }
+
+    .diveButton{
+        width: 150px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 5vh;
+        margin: 0 auto;
+        text-align: center;
+        border: 1px solid #DDDDDD;
+        padding: 10px;
+        color: #DDDDDD;
+        cursor: pointer;
+        opacity: 0;
+    }
+
+    .diveButton:hover{
+        color: #222222;
+        background-color: #DDDDDD;
+        opacity: 1 !important;
+    }
+
+}
+
+/* iPhone 6,7,8,X */
+@media screen and (min-width: 375px) and (max-width: 768px) {
+
+    .progress-container {
+        width: 100%;
+        height: 5px;
+        background: none;
+        position: fixed;
+        top: 0;
+        z-index: 800;
+        /* transition: ease-in-out; */
+    }
+      
+    .progress-bar {
+        height: 5px;
+        background: #e21313;
+        width: 0%;
+        border-radius: 0px 50px 50px 0px;
+    }
+
+    /* sidenav */
+
+    .sidenav{
+        z-index: 800;
+        transition: 1s;
+    }
+    
+    #mySidenav a {
+        position: fixed;
+        right: -60px !important;
+        transition: 0.3s;
+        padding: 5px;
+        padding-left: 20px;
+        width: 80px;
+        text-decoration: none;
+        font-size: 15px;
+        color: white;
+        border-radius: 5px 0px 0px 25px;
+        z-index: 800;
+    }
+      
+    #mySidenav a:hover {
+        right: 0 !important;
+        cursor: pointer;
+    }
+    
+    .projectNav{
+        opacity: 0;
+    }
+    
+    .heroPageNav {
+        top: 20vh;
+        background-color: #4CAF50;
+    }
+      
+    .firstNav {
+        top: 27vh;
+        background-color: #4CAF50;
+    }
+      
+    .secondNav {
+        top: 34vh;
+        background-color: #4CAF50;
+    }
+      
+    .thirdNav {
+        top: 41vh;
+        background-color: #aab336;
+    }
+      
+    .forthNav {
+        top: 48vh;
+        background-color: #aab336;
+    }
+      
+    .fifthNav {
+        top: 55vh;
+        background-color: #aab336;
+    }
+      
+    .sixthNav {
+        top: 62vh;
+        background-color: #b33636;
+    }
+      
+    .contactNav {
+        top: 69vh;
+        background-color: #b33636;
+    }
+
+    /* --------------- welcomeContainer --------------- */
+
+    .welcomeContainer{
+        width: 100vw;
+        height: 100vh;
+        background-color: #131922;
+        position: fixed;
+        z-index: 1000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 50px;
+    }
+
+    .welcomeText1, .welcomeText2{
+        /* transition: 1s; */
+        opacity: 0;
+        font-size: 8pt;
+        text-align: center;
+    }
+
+    .para{
+        color: #FFFFFF;
+        text-shadow: 0px 1px #00000050;
+        font-size: 10pt;
+        text-align: justify;
+    }    
+    
+    .textShadow{
+        color: #707070;
+        text-shadow: 0px 0.5px #70707050;
+    }
+
+    .bottomBtnContainer{
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 18vh;
+        margin: 0 auto;
+        text-align: center;
+        opacity: 0;
+    }
+    
+    .bottomButton{
+        color: #DDDDDD;
+        border: 1px solid #DDDDDD;
+        border-radius: 5px;
+        padding: 10px;
+        cursor: pointer;
+        transition: 0.2s;
+        opacity: 1;
+        margin: auto 5px auto 5px;
+    }
+    
+    .bottomButton:hover{
+        background-color: #DDDDDD;
+        color: #222222;
+        opacity: 1 !important;
+    }
+
+    .grid-container{
+        width: 90vw;
+    }
+
+    /* --------------- submarine --------------- */
+
+    .subMarine{
+        height: 23px;
+        position: fixed;
+        z-index: 300;
+        bottom: 15vh;
+        left: 3vw;
+        opacity: 0;
+    }
+
+    /* --------------- heropage --------------- */
+
+    .heroPage{
+        height: 100vh;
+        width: 100vw;
+        background: #131922;
+        color: #FFFFFF;
+        background-image: url(../images/projects_heroPage.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+        position: relative;
+    }
+
+    .airSpace{
+        position: absolute;
+        width: 100vw;
+        top: 5vh;
+        z-index: 0;
+    }
+
+    .plane, .plane2, .plane3, .plane4{
+        height: 20px;
+        z-index: 0 !important;
+        position: absolute;
+    }
+
+    .plane{
+        top: 5vh;
+    }
+    .plane2{
+        top: 6vh;
+    }
+
+    .plane3{
+        top: 8vh;
+    }
+
+    .plane4{
+        top: 5vh;
+    }
+
+    .blast1, .blast2, .blast3, .blast4{
+        z-index: 0 !important;
+        position: absolute;
+    }
+
+    .blast1{
+        height: 20px;
+        left: 10vw;
+        top: 22vh;
+    }
+
+    .blast2{
+        height: 30px;
+        right: 10vw;
+        top: 12vh;
+    }
+
+    .blast3{
+        height: 35px;
+        left: 45vw;
+        top: 32vh;
+    }
+
+    .blast4{
+        height: 25px;
+        right: 35vw;
+        top: 25vh;
+    }
+
+    .cloud1{
+        height: 70px;
+        z-index: 100 !important;
+        position: absolute;
+        top: -1vh;
+    }
+
+    .cloud2{
+        height: 70px;
+        z-index: 200 !important;
+        position: absolute;
+        top: 10vh;
+    }
+
+    .ship1{
+        position: absolute;
+        height: 35px;
+        bottom: 38vh;
+        right: 1vw;
+        margin: 0 auto;
+    }
+
+    .ship2{
+        position: absolute;
+        height: 35px;
+        bottom: 38vh;
+        left: 1vw;
+        margin: 0 auto;
+    }
+
+    .heroContent{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 100;
+    }
+
+    #animation_container{
+        height: 100vh !important;
+    }
+
+    .diveButton{
+        width: 100px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 15vh;
+        margin: 0 auto;
+        text-align: center;
+        border: 1px solid #DDDDDD;
+        padding: 10px;
+        color: #DDDDDD;
+        cursor: pointer;
+        opacity: 0;
+        font-size: 10pt;
+    }
+
+    .diveButton:hover{
+        color: #222222;
+        background-color: #DDDDDD;
+        opacity: 1 !important;
+    }
+
+    /* --------------- firstPage --------------- */
+
+    .firstPage{
+        height: 100vh;
+        width: 100vw;
+        background: #131922;
+        color: #FFFFFF;
+        background-image: url(../images/projects_firstPage.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+        position: relative;
+        padding-top: 40px;
+    }
+
+    .pageHead{
+        position: relative;
+        display: block !important;
+        text-align: center;
+        font-size: 12pt;
+    }
+
+    .firstStagger{
+        /* display: none; */
+        opacity: 0;
+    }
+
+    .firstStagger::after{
+        display: flex;
+        opacity: 1;
+    }
+
+    .iconsContainer{
+        display: flex;
+        position: relative;
+        flex-direction: row;
+        justify-content: left !important;
+        /* padding: 10px; */
+    }
+
+    .projectIcons{
+        min-height: 15px !important;
+        max-height: 20px !important;
+        margin-right: 10px !important;
+    }
+
+    .mobileTechIcons{
+        /* display: flex; */
+        margin: 7px auto;
+    }
+
+    .projectImages{
+        position: relative;
+        display: block !important;
+        text-align: center !important;
+        left: 0;
+        right: 0;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        min-height: 50px;
+        max-height: 100px;
+        object-fit: fill;
+        border-radius: 5px;
+    }
+
+    .projectImages:hover{
+        box-shadow: 0px 0px 20px #1e90ff;
+    }
+
+    .otherProjectImages{
+        position: relative;
+        display: block !important;
+        text-align: center !important;
+        left: 0;
+        right: 0;
+        margin: auto;
+        min-width: 50px;
+        max-width: 75px;
+        min-height: 50px;
+        max-height: 75px;
+        border-radius: 3px;
+    }
+
+    .otherProjectImages:hover{
+        box-shadow: 0px 0px 20px #1e90ff;
+    }
+
+    
+    .captions{
+        margin-top: 10px;
+        font-size: 8pt;
+    }
+
+    .aboutHead{
+        opacity: 0;
+        text-align: center;
+        margin: 0px auto 20px auto;
+        z-index: 150;
+    }
+
+    .aboutContent{
+        /* border: 1px solid red; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        z-index: 150;
+        font-size: 10pt;
+    }
+
+    .aboutContainer{
+        /* width: 70vw; */
+        height: 50vh;
+        position: relative;
+        top: 10vh;
+    }
+
+    .dhruvilImage{
+        max-height: 300px;
+        margin-bottom: 30px;
+        border-radius: 10px;
+        opacity: 0;
+        z-index: 150;
+    }
+
+    .aboutSub{
+        text-align: justify;
+        /* margin-top: 10px; */
+        opacity: 0;
+        z-index: 150;
+    }
+
+    
+    .shark1{
+        height: 40px;
+        display: inline-block;
+        position: absolute;
+        bottom: 40vh;
+        right: -30vw;
+        opacity: 0.6;
+        z-index: 0;
+
+    }
+
+    .shark2{
+        height: 20px;
+        display: inline-block;
+        position: absolute;
+        bottom: 47vh;
+        right: -20vw;
+        opacity: 0.6;
+        z-index: 0;
+    }
+
+    /* --------------- contactPage --------------- */
+
+    .contactPage{
+        height: 100vh;
+        width: 100vw;
+        position: relative;
+        background: #131922;
+        color: #FFFFFF;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+    }
+
+    .contact{
+        opacity: 0;
+    }
+
+    .contactHead{
+        text-align: center;
+        position: relative;
+        top: 10vh;
+    }
+
+    .contactContainer{
+        position: relative;
+        top: 20vh;
+    }
+
+    .contactIcons{
+        min-height: 20px;
+        max-height: 30px;
+        cursor: pointer;
+    }
+
+    .footerContainer{
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 40vh;
+        margin: 0 auto;
+        text-align: center;
+        opacity: 1;
+        font-size: 8pt;
+    }
+
+    .contactBtn{
+        color: #DDDDDD;
+        border: 1px solid #DDDDDD;
+        border-radius: 5px;
+        padding: 7px;
+        cursor: pointer;
+        transition: 0.2s;
+        opacity: 1;
+        margin: auto 5px auto 5px;
+        position: relative;
+        top: 50px;
+    }
+
+    .contactBtn:hover{
+        background-color: #DDDDDD;
+        color: #222222;
+        opacity: 1 !important;
+    }
+
+    .copyright{
+        position: absolute;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        bottom: 15vh;
+        text-align: center;
+        font-size: 10pt;
+    }
+
+    .loadToPresent{
+        width: 100vw;
+        height: 100vh;
+        z-index: 1000;
+        background: #131922;
+        position: fixed;
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+
+/* iphone 5 */
+@media screen and (min-width: 320px) and (max-width: 374px) {
+
+    .progress-container {
+        width: 100%;
+        height: 5px;
+        background: none;
+        position: fixed;
+        top: 0;
+        z-index: 800;
+        /* transition: ease-in-out; */
+    }
+      
+    .progress-bar {
+        height: 5px;
+        background: #e21313;
+        width: 0%;
+        border-radius: 0px 50px 50px 0px;
+    }
+
+    /* --------------- welcomeContainer --------------- */
+
+    .welcomeContainer{
+        width: 100vw;
+        height: 100vh;
+        background-color: #131922;
+        position: fixed;
+        z-index: 1000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 50px;
+    }
+
+    .welcomeText1, .welcomeText2{
+        /* transition: 1s; */
+        opacity: 0;
+        font-size: 8pt;
+        text-align: center;
+    }
+
+    .para{
+        color: #FFFFFF;
+        text-shadow: 0px 1px #00000050;
+        font-size: 8pt;
+        text-align: justify;
+    }    
+    
+    .textShadow{
+        color: #707070;
+        text-shadow: 0px 0.5px #70707050;
+    }
+
+    .bottomBtnContainer{
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 15vh;
+        margin: 0 auto;
+        text-align: center;
+        opacity: 0;
+    }
+    
+    .bottomButton{
+        color: #DDDDDD;
+        border: 1px solid #DDDDDD;
+        border-radius: 5px;
+        padding: 10px;
+        cursor: pointer;
+        transition: 0.2s;
+        opacity: 1;
+        margin: auto 5px auto 5px;
+    }
+    
+    .bottomButton:hover{
+        background-color: #DDDDDD;
+        color: #222222;
+        opacity: 1 !important;
+    }
+
+    .grid-container{
+        width: 90vw;
+    }
+
+    /* --------------- submarine --------------- */
+
+    .subMarine{
+        height: 20px;
+        position: fixed;
+        z-index: 300;
+        bottom: 15vh;
+        left: 1vw;
+        opacity: 0;
+    }
+
+    /* --------------- heropage --------------- */
+
+    .heroPage{
+        height: 100vh;
+        width: 100vw;
+        background: #131922;
+        color: #FFFFFF;
+        background-image: url(../images/projects_heroPage.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+        position: relative;
+    }
+
+    .airSpace{
+        position: absolute;
+        width: 100vw;
+        top: 5vh;
+        z-index: 0;
+    }
+
+    .plane, .plane2, .plane3, .plane4{
+        height: 20px;
+        z-index: 0 !important;
+        position: absolute;
+    }
+
+    .plane{
+        top: 5vh;
+    }
+    .plane2{
+        top: 6vh;
+    }
+
+    .plane3{
+        top: 8vh;
+    }
+
+    .plane4{
+        top: 5vh;
+    }
+
+    .blast1, .blast2, .blast3, .blast4{
+        z-index: 0 !important;
+        position: absolute;
+    }
+
+    .blast1{
+        height: 20px;
+        left: 10vw;
+        top: 22vh;
+    }
+
+    .blast2{
+        height: 30px;
+        right: 10vw;
+        top: 12vh;
+    }
+
+    .blast3{
+        height: 35px;
+        left: 45vw;
+        top: 32vh;
+    }
+
+    .blast4{
+        height: 25px;
+        right: 35vw;
+        top: 25vh;
+    }
+
+    .cloud1{
+        height: 70px;
+        z-index: 100 !important;
+        position: absolute;
+        top: -1vh;
+    }
+
+    .cloud2{
+        height: 70px;
+        z-index: 200 !important;
+        position: absolute;
+        top: 10vh;
+    }
+
+    .ship1{
+        position: absolute;
+        height: 30px;
+        bottom: 38vh;
+        right: 1vw;
+        margin: 0 auto;
+    }
+
+    .ship2{
+        position: absolute;
+        height: 30px;
+        bottom: 38vh;
+        left: 1vw;
+        margin: 0 auto;
+    }
+
+    .heroContent{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 100;
+    }
+
+    #animation_container{
+        height: 100vh !important;
+    }
+
+    .diveButton{
+        width: 100px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 15vh;
+        margin: 0 auto;
+        text-align: center;
+        border: 1px solid #DDDDDD;
+        padding: 10px;
+        color: #DDDDDD;
+        cursor: pointer;
+        opacity: 0;
+        font-size: 10pt;
+    }
+
+    .diveButton:hover{
+        color: #222222;
+        background-color: #DDDDDD;
+        opacity: 1 !important;
+    }
+
+    /* --------------- firstPage --------------- */
+
+    .firstPage{
+        height: 100vh;
+        width: 100vw;
+        background: #131922;
+        color: #FFFFFF;
+        background-image: url(../images/projects_firstPage.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+        position: relative;
+        padding-top: 40px;
+    }
+
+    .pageHead{
+        position: relative;
+        display: block !important;
+        text-align: center;
+        font-size: 12pt;
+    }
+
+    .firstStagger{
+        /* display: none; */
+        opacity: 0;
+    }
+
+    .firstStagger::after{
+        display: flex;
+        opacity: 1;
+    }
+
+    .iconsContainer{
+        display: flex;
+        position: relative;
+        flex-direction: row;
+        justify-content: left !important;
+        /* padding: 10px; */
+    }
+
+    .projectIcons{
+        min-height: 15px !important;
+        max-height: 20px !important;
+        margin-right: 6px !important;
+    }
+
+    .mobileTechIcons{
+        margin: 7px auto;
+        width: auto;
+    }
+
+    .projectImages{
+        position: relative;
+        display: block !important;
+        text-align: center !important;
+        left: 0;
+        right: 0;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        min-height: 50px;
+        max-height: 70px;
+        object-fit: fill;
+        border-radius: 5px;
+    }
+
+    .projectImages:hover{
+        box-shadow: 0px 0px 20px #1e90ff;
+    }
+
+    .otherProjectImages{
+        position: relative;
+        display: block !important;
+        text-align: center !important;
+        left: 0;
+        right: 0;
+        margin: auto;
+        min-width: 50px;
+        max-width: 75px;
+        min-height: 50px;
+        max-height: 75px;
+        border-radius: 3px;
+    }
+
+    .otherProjectImages:hover{
+        box-shadow: 0px 0px 20px #1e90ff;
+    }
+
+    
+    .captions{
+        margin-top: 10px;
+        font-size: 7pt;
+    }
+
+    .aboutHead{
+        opacity: 0;
+        text-align: center;
+        margin: 0px auto 20px auto;
+        z-index: 150;
+    }
+
+    .aboutContent{
+        /* border: 1px solid red; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        z-index: 150;
+        font-size: 10pt;
+    }
+
+    .aboutContainer{
+        /* width: 70vw; */
+        height: 50vh;
+        position: relative;
+        top: 10vh;
+    }
+
+    .dhruvilImage{
+        max-height: 300px;
+        margin-bottom: 30px;
+        border-radius: 10px;
+        opacity: 0;
+        z-index: 150;
+    }
+
+    .aboutSub{
+        text-align: justify;
+        /* margin-top: 10px; */
+        opacity: 0;
+        z-index: 150;
+    }
+
+    
+    .shark1{
+        height: 40px;
+        display: inline-block;
+        position: absolute;
+        bottom: 40vh;
+        right: -30vw;
+        opacity: 0.6;
+        z-index: 0;
+
+    }
+
+    .shark2{
+        height: 20px;
+        display: inline-block;
+        position: absolute;
+        bottom: 47vh;
+        right: -20vw;
+        opacity: 0.6;
+        z-index: 0;
+    }
+
+    /* --------------- contactPage --------------- */
+
+    .contactPage{
+        height: 100vh;
+        width: 100vw;
+        position: relative;
+        background: #131922;
+        color: #FFFFFF;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+    }
+
+    .contact{
+        opacity: 0;
+    }
+
+    .contactHead{
+        text-align: center;
+        position: relative;
+        top: 10vh;
+    }
+
+    .contactContainer{
+        position: relative;
+        top: 20vh;
+    }
+
+    .contactIcons{
+        min-height: 20px;
+        max-height: 25px;
+        cursor: pointer;
+    }
+
+    .footerContainer{
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 40vh;
+        margin: 0 auto;
+        text-align: center;
+        opacity: 1;
+        font-size: 8pt;
+    }
+
+    .contactBtn{
+        color: #DDDDDD;
+        border: 1px solid #DDDDDD;
+        border-radius: 5px;
+        padding: 7px;
+        cursor: pointer;
+        transition: 0.2s;
+        opacity: 1;
+        margin: auto 5px auto 5px;
+        position: relative;
+        top: 100px;
+    }
+
+    .contactBtn:hover{
+        background-color: #DDDDDD;
+        color: #222222;
+        opacity: 1 !important;
+    }
+
+    .copyright{
+        position: absolute;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        bottom: 15vh;
+        text-align: center;
+        font-size: 10pt;
+    }
+
+    .loadToPresent{
+        width: 100vw;
+        height: 100vh;
+        z-index: 1000;
+        background: #131922;
+        position: fixed;
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* ipad, ipad mini */
+@media screen and (min-width: 768px) and (max-width: 833px) {
+
+    /* --------------- welcomeContainer --------------- */
+
+    .welcomeContainer{
+        width: 100vw;
+        height: 100vh;
+        background-color: #131922;
+        position: fixed;
+        z-index: 1000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 50px;
+    }
+
+    .welcomeText1, .welcomeText2{
+        /* transition: 1s; */
+        opacity: 0;
+        font-size: 12pt;
+        text-align: center;
+    }
+
+    .para{
+        color: #FFFFFF;
+        text-shadow: 0px 1px #00000050;
+        font-size: 12pt;
+        text-align: justify;
+    }    
+    
+    .textShadow{
+        color: #707070;
+        text-shadow: 0px 0.5px #70707050;
+    }
+
+    .bottomBtnContainer{
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 18vh;
+        margin: 0 auto;
+        text-align: center;
+        opacity: 0;
+    }
+    
+    .bottomButton{
+        color: #DDDDDD;
+        border: 1px solid #DDDDDD;
+        border-radius: 5px;
+        padding: 10px;
+        cursor: pointer;
+        transition: 0.2s;
+        opacity: 1;
+        margin: auto 5px auto 5px;
+    }
+    
+    .bottomButton:hover{
+        background-color: #DDDDDD;
+        color: #222222;
+        opacity: 1 !important;
+    }
+
+    .grid-container{
+        width: 70vw;
+    }
+
+    /* --------------- submarine --------------- */
+
+    .subMarine{
+        height: 30px;
+        position: fixed;
+        z-index: 300;
+        bottom: 15vh;
+        left: 3vw;
+        opacity: 0;
+    }
+
+    /* --------------- heropage --------------- */
+
+    .heroPage{
+        height: 100vh;
+        width: 100vw;
+        background: #131922;
+        color: #FFFFFF;
+        background-image: url(../images/projects_heroPage.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+        position: relative;
+    }
+
+    .airSpace{
+        position: absolute;
+        width: 100vw;
+        top: 5vh;
+        z-index: 0;
+    }
+
+    .plane, .plane2, .plane3, .plane4{
+        height: 30px;
+        z-index: 0 !important;
+        position: absolute;
+    }
+
+    .plane{
+        top: 5vh;
+    }
+    .plane2{
+        top: 6vh;
+    }
+
+    .plane3{
+        top: 8vh;
+    }
+
+    .plane4{
+        top: 5vh;
+    }
+
+    .blast1, .blast2, .blast3, .blast4{
+        z-index: 0 !important;
+        position: absolute;
+    }
+
+    .blast1{
+        height: 20px;
+        left: 10vw;
+        top: 22vh;
+    }
+
+    .blast2{
+        height: 30px;
+        right: 10vw;
+        top: 12vh;
+    }
+
+    .blast3{
+        height: 35px;
+        left: 45vw;
+        top: 32vh;
+    }
+
+    .blast4{
+        height: 25px;
+        right: 35vw;
+        top: 25vh;
+    }
+
+    .cloud1{
+        height: 100px;
+        z-index: 100 !important;
+        position: absolute;
+        top: -1vh;
+    }
+
+    .cloud2{
+        height: 100px;
+        z-index: 200 !important;
+        position: absolute;
+        top: 10vh;
+    }
+
+    .ship1{
+        position: absolute;
+        height: 70px;
+        bottom: 38vh;
+        right: 1vw;
+        margin: 0 auto;
+    }
+
+    .ship2{
+        position: absolute;
+        height: 70px;
+        bottom: 38vh;
+        left: 1vw;
+        margin: 0 auto;
+    }
+
+    .heroContent{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 100;
+    }
+
+    #animation_container{
+        height: 100vh !important;
+    }
+
+    .diveButton{
+        width: 100px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 15vh;
+        margin: 0 auto;
+        text-align: center;
+        border: 1px solid #DDDDDD;
+        padding: 10px;
+        color: #DDDDDD;
+        cursor: pointer;
+        opacity: 0;
+        font-size: 10pt;
+    }
+
+    .diveButton:hover{
+        color: #222222;
+        background-color: #DDDDDD;
+        opacity: 1 !important;
+    }
+
+    /* --------------- firstPage --------------- */
+
+    .firstPage{
+        height: 100vh;
+        width: 100vw;
+        background: #131922;
+        color: #FFFFFF;
+        background-image: url(../images/projects_firstPage.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+        position: relative;
+        padding-top: 40px;
+    }
+
+    .pageHead{
+        position: relative;
+        display: block !important;
+        text-align: center;
+        font-size: 12pt;
+    }
+
+    .firstStagger{
+        /* display: none; */
+        opacity: 0;
+    }
+
+    .firstStagger::after{
+        display: flex;
+        opacity: 1;
+    }
+
+    .iconsContainer{
+        display: flex;
+        position: relative;
+        flex-direction: row;
+        justify-content: left !important;
+        /* padding: 10px; */
+    }
+
+    .projectIcons{
+        min-height: 20px !important;
+        max-height: 35px !important;
+        margin-right: 10px !important;
+    }
+
+    .mobileTechIcons{
+        margin: 10px auto;
+    }
+
+    .projectImages{
+        position: relative;
+        display: block !important;
+        text-align: center !important;
+        left: 0;
+        right: 0;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        min-height: 100px;
+        max-height: 250px;
+        object-fit: fill;
+        border-radius: 5px;
+    }
+
+    .projectImages:hover{
+        box-shadow: 0px 0px 20px #1e90ff;
+    }
+
+    .otherProjectImages{
+        position: relative;
+        display: block !important;
+        text-align: center !important;
+        left: 0;
+        right: 0;
+        margin: auto;
+        min-width: 100px;
+        max-width: 150px;
+        min-height: 75px;
+        max-height: 100px;
+        border-radius: 3px;
+    }
+
+    .otherProjectImages:hover{
+        box-shadow: 0px 0px 20px #1e90ff;
+    }
+
+    
+    .captions{
+        margin-top: 10px;
+        font-size: 8pt;
+    }
+
+    .aboutHead{
+        opacity: 0;
+        text-align: center;
+        margin: 0px auto 20px auto;
+        z-index: 150;
+    }
+
+    .aboutContent{
+        /* border: 1px solid red; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        z-index: 150;
+        font-size: 10pt;
+    }
+
+    .aboutContainer{
+        /* width: 70vw; */
+        height: 50vh;
+        position: relative;
+        top: 10vh;
+    }
+
+    .dhruvilImage{
+        max-height: 300px;
+        margin-bottom: 30px;
+        border-radius: 10px;
+        opacity: 0;
+        z-index: 150;
+    }
+
+    .aboutSub{
+        text-align: justify;
+        /* margin-top: 10px; */
+        opacity: 0;
+        z-index: 150;
+    }
+
+    
+    .shark1{
+        height: 40px;
+        display: inline-block;
+        position: absolute;
+        bottom: 40vh;
+        right: -30vw;
+        opacity: 0.6;
+        z-index: 0;
+
+    }
+
+    .shark2{
+        height: 20px;
+        display: inline-block;
+        position: absolute;
+        bottom: 47vh;
+        right: -20vw;
+        opacity: 0.6;
+        z-index: 0;
+    }
+
+    /* --------------- contactPage --------------- */
+
+    .contactPage{
+        height: 100vh;
+        width: 100vw;
+        position: relative;
+        background: #131922;
+        color: #FFFFFF;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+    }
+
+    .contact{
+        opacity: 0;
+    }
+
+    .contactHead{
+        text-align: center;
+        position: relative;
+        top: 10vh;
+    }
+
+    .contactContainer{
+        position: relative;
+        top: 20vh;
+    }
+
+    .contactIcons{
+        min-height: 20px;
+        max-height: 30px;
+        cursor: pointer;
+    }
+
+    .footerContainer{
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 40vh;
+        margin: 0 auto;
+        text-align: center;
+        opacity: 1;
+        font-size: 12pt;
+    }
+
+    .contactBtn{
+        color: #DDDDDD;
+        border: 1px solid #DDDDDD;
+        border-radius: 5px;
+        padding: 7px;
+        cursor: pointer;
+        transition: 0.2s;
+        opacity: 1;
+        margin: auto 5px auto 5px;
+        position: relative;
+        top: 50px;
+    }
+
+    .contactBtn:hover{
+        background-color: #DDDDDD;
+        color: #222222;
+        opacity: 1 !important;
+    }
+
+    .copyright{
+        position: absolute;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        bottom: 15vh;
+        text-align: center;
+        font-size: 10pt;
+    }
+
+    .loadToPresent{
+        width: 100vw;
+        height: 100vh;
+        z-index: 1000;
+        background: #131922;
+        position: fixed;
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* ipad pro*/
+@media screen and (min-width: 834px) and (max-width: 1025px) {
+    /* --------------- welcomeContainer --------------- */
+
+    .welcomeContainer{
+        width: 100vw;
+        height: 100vh;
+        background-color: #131922;
+        position: fixed;
+        z-index: 1000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 50px;
+    }
+
+    .welcomeText1, .welcomeText2{
+        /* transition: 1s; */
+        opacity: 0;
+        font-size: 12pt;
+        text-align: center;
+    }
+
+    .para{
+        color: #FFFFFF;
+        text-shadow: 0px 1px #00000050;
+        font-size: 12pt;
+        text-align: justify;
+    }    
+    
+    .textShadow{
+        color: #707070;
+        text-shadow: 0px 0.5px #70707050;
+    }
+
+    .bottomBtnContainer{
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 18vh;
+        margin: 0 auto;
+        text-align: center;
+        opacity: 0;
+    }
+    
+    .bottomButton{
+        color: #DDDDDD;
+        border: 1px solid #DDDDDD;
+        border-radius: 5px;
+        padding: 10px;
+        cursor: pointer;
+        transition: 0.2s;
+        opacity: 1;
+        margin: auto 5px auto 5px;
+    }
+    
+    .bottomButton:hover{
+        background-color: #DDDDDD;
+        color: #222222;
+        opacity: 1 !important;
+    }
+
+    .grid-container{
+        width: 70vw;
+    }
+
+    /* --------------- submarine --------------- */
+
+    .subMarine{
+        height: 30px;
+        position: fixed;
+        z-index: 300;
+        bottom: 15vh;
+        left: 3vw;
+        opacity: 0;
+    }
+
+    /* --------------- heropage --------------- */
+
+    .heroPage{
+        height: 100vh;
+        width: 100vw;
+        background: #131922;
+        color: #FFFFFF;
+        background-image: url(../images/projects_heroPage.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+        position: relative;
+    }
+
+    .airSpace{
+        position: absolute;
+        width: 100vw;
+        top: 5vh;
+        z-index: 0;
+    }
+
+    .plane, .plane2, .plane3, .plane4{
+        height: 30px;
+        z-index: 0 !important;
+        position: absolute;
+    }
+
+    .plane{
+        top: 5vh;
+    }
+    .plane2{
+        top: 6vh;
+    }
+
+    .plane3{
+        top: 8vh;
+    }
+
+    .plane4{
+        top: 5vh;
+    }
+
+    .blast1, .blast2, .blast3, .blast4{
+        z-index: 0 !important;
+        position: absolute;
+    }
+
+    .blast1{
+        height: 20px;
+        left: 10vw;
+        top: 22vh;
+    }
+
+    .blast2{
+        height: 30px;
+        right: 10vw;
+        top: 12vh;
+    }
+
+    .blast3{
+        height: 35px;
+        left: 45vw;
+        top: 32vh;
+    }
+
+    .blast4{
+        height: 25px;
+        right: 35vw;
+        top: 25vh;
+    }
+
+    .cloud1{
+        height: 100px;
+        z-index: 100 !important;
+        position: absolute;
+        top: -1vh;
+    }
+
+    .cloud2{
+        height: 100px;
+        z-index: 200 !important;
+        position: absolute;
+        top: 10vh;
+    }
+
+    .ship1{
+        position: absolute;
+        height: 70px;
+        bottom: 38vh;
+        right: 1vw;
+        margin: 0 auto;
+    }
+
+    .ship2{
+        position: absolute;
+        height: 70px;
+        bottom: 38vh;
+        left: 1vw;
+        margin: 0 auto;
+    }
+
+    .heroContent{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 100;
+    }
+
+    #animation_container{
+        height: 100vh !important;
+    }
+
+    .diveButton{
+        width: 100px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 15vh;
+        margin: 0 auto;
+        text-align: center;
+        border: 1px solid #DDDDDD;
+        padding: 10px;
+        color: #DDDDDD;
+        cursor: pointer;
+        opacity: 0;
+        font-size: 10pt;
+    }
+
+    .diveButton:hover{
+        color: #222222;
+        background-color: #DDDDDD;
+        opacity: 1 !important;
+    }
+
+    /* --------------- firstPage --------------- */
+
+    .firstPage{
+        height: 100vh;
+        width: 100vw;
+        background: #131922;
+        color: #FFFFFF;
+        background-image: url(../images/projects_firstPage.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+        position: relative;
+        padding-top: 40px;
+    }
+
+    .pageHead{
+        position: relative;
+        display: block !important;
+        text-align: center;
+        font-size: 12pt;
+    }
+
+    .firstStagger{
+        /* display: none; */
+        opacity: 0;
+    }
+
+    .firstStagger::after{
+        display: flex;
+        opacity: 1;
+    }
+
+    .iconsContainer{
+        display: flex;
+        position: relative;
+        flex-direction: row;
+        justify-content: left !important;
+        /* padding: 10px; */
+    }
+
+    .projectIcons{
+        min-height: 20px !important;
+        max-height: 35px !important;
+        margin-right: 10px !important;
+    }
+
+    .mobileTechIcons{
+        margin: 10px auto;
+    }
+
+    .projectImages{
+        position: relative;
+        display: block !important;
+        text-align: center !important;
+        left: 0;
+        right: 0;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        min-height: 100px;
+        max-height: 250px;
+        object-fit: fill;
+        border-radius: 5px;
+    }
+
+    .projectImages:hover{
+        box-shadow: 0px 0px 20px #1e90ff;
+    }
+
+    .otherProjectImages{
+        position: relative;
+        display: block !important;
+        text-align: center !important;
+        left: 0;
+        right: 0;
+        margin: auto;
+        min-width: 100px;
+        max-width: 150px;
+        min-height: 75px;
+        max-height: 100px;
+        border-radius: 3px;
+    }
+
+    .otherProjectImages:hover{
+        box-shadow: 0px 0px 20px #1e90ff;
+    }
+
+    
+    .captions{
+        margin-top: 10px;
+        font-size: 8pt;
+    }
+
+    .aboutHead{
+        opacity: 0;
+        text-align: center;
+        margin: 0px auto 20px auto;
+        z-index: 150;
+    }
+
+    .aboutContent{
+        /* border: 1px solid red; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        z-index: 150;
+        font-size: 10pt;
+    }
+
+    .aboutContainer{
+        /* width: 70vw; */
+        height: 50vh;
+        position: relative;
+        top: 10vh;
+    }
+
+    .dhruvilImage{
+        max-height: 300px;
+        margin-bottom: 30px;
+        border-radius: 10px;
+        opacity: 0;
+        z-index: 150;
+    }
+
+    .aboutSub{
+        text-align: justify;
+        /* margin-top: 10px; */
+        opacity: 0;
+        z-index: 150;
+    }
+
+    
+    .shark1{
+        height: 40px;
+        display: inline-block;
+        position: absolute;
+        bottom: 40vh;
+        right: -30vw;
+        opacity: 0.6;
+        z-index: 0;
+
+    }
+
+    .shark2{
+        height: 20px;
+        display: inline-block;
+        position: absolute;
+        bottom: 47vh;
+        right: -20vw;
+        opacity: 0.6;
+        z-index: 0;
+    }
+
+    /* --------------- contactPage --------------- */
+
+    .contactPage{
+        height: 100vh;
+        width: 100vw;
+        position: relative;
+        background: #131922;
+        color: #FFFFFF;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+    }
+
+    .contact{
+        opacity: 0;
+    }
+
+    .contactHead{
+        text-align: center;
+        position: relative;
+        top: 10vh;
+    }
+
+    .contactContainer{
+        position: relative;
+        top: 20vh;
+    }
+
+    .contactIcons{
+        min-height: 20px;
+        max-height: 30px;
+        cursor: pointer;
+    }
+
+    .footerContainer{
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 40vh;
+        margin: 0 auto;
+        text-align: center;
+        opacity: 1;
+        font-size: 12pt;
+    }
+
+    .contactBtn{
+        color: #DDDDDD;
+        border: 1px solid #DDDDDD;
+        border-radius: 5px;
+        padding: 7px;
+        cursor: pointer;
+        transition: 0.2s;
+        opacity: 1;
+        margin: auto 5px auto 5px;
+        position: relative;
+        top: 50px;
+    }
+
+    .contactBtn:hover{
+        background-color: #DDDDDD;
+        color: #222222;
+        opacity: 1 !important;
+    }
+
+    .copyright{
+        position: absolute;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        bottom: 15vh;
+        text-align: center;
+        font-size: 10pt;
+    }
+
+    .loadToPresent{
+        width: 100vw;
+        height: 100vh;
+        z-index: 1000;
+        background: #131922;
+        position: fixed;
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
